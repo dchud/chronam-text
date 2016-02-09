@@ -22,7 +22,7 @@ to create a virtualenv and run:
 fetching data
 -------------
 
-To fetch data, run the fetch.py command.  Collected data will be
+To fetch data, run the ```fetch.py``` command.  Collected data will be
 sorted into unique directories for each distinct day, with individual
 pages from different newspapers distinguished by their LCCN prefixing 
 their file names, followed by the issue edition and sequence number.
