@@ -46,3 +46,26 @@ This will cap the total number of pages of text collected to 300.
 Note that only newspaper pages from 1836-1922 are available; if you 
 request a year before 1836 or later than 1922 you will see an error
 message.
+
+
+sample data
+-----------
+
+A selection of front pages from 1916 is included under the ```dates```
+directory.  This set was fetched using the ```--pageone``` and ```-y
+1916``` parameters.  Only the text files are in the repo; the ALTO
+XML files are excluded due to their combined size (>3Gb).  The
+roughly 28,000 files span all of 1916.
+
+The individual text files can be mapped to their newspaper title
+bibliographic data using the JSON data in the ```titles``` directory.
+Just match the LCCN in the name of the text file to the corresponding
+JSON file in ```titles```.
+
+This data was fetched using the ```fetch_titles.py``` script, which
+(without options) examines collected data in the ```dates``` directory
+to prepare a list of unique LCCNs, then fetches the bibliographic
+data for each title/LCCN from ChronAm.
+
+There are 308 title records in ```titles``` corresponding to the
+collected front pages from 1916 in ```dates```.
