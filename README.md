@@ -32,16 +32,16 @@ There are a few options:
 
         % ./fetch.py -y 1916 
 
-    This will limit collected page text to the year 1916.
+This will limit collected page text to the year 1916.
 
         % ./fetch.py -y 1916 --pageone
 
-    This will limit collected page text further to only the first
-    pages of issues from 1916.
+This will limit collected page text further to only the first pages
+of issues from 1916.
 
         % ./fetch.py -y 1916 --pageone --limit=300
 
-    This will cap the total number of pages of text collected to 300.
+This will cap the total number of pages of text collected to 300.
 
 Note that only newspaper pages from 1836-1922 are available; if you 
 request a year before 1836 or later than 1922 you will see an error
