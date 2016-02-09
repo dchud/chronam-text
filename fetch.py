@@ -77,6 +77,8 @@ def fetch_text(args, page=1):
     end_index = d['endIndex']
     if end_index >= args.limit:
         return
+    if end_index >= d['totalItems']:
+        return
     page = end_index // d['itemsPerPage']
     fetch_text(args=args, page=page + 1)
 
